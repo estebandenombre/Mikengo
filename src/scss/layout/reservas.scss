@@ -1,0 +1,83 @@
+/* Estilos para la sección de reservas */
+.reservas-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.reservas-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reservas-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.reservas-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.reservas-form {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.reserva-button {
+    background-color: #8DB1AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserva-button:hover {
+    background-color: #8db1ab86;
+}
+
+/* Estilos para hacer que el formulario sea responsive */
+@media screen and (min-width: 768px) {
+    .reservas-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,59 @@
+
+.pedido-details {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    .submit-button{
+    display: block;
+    background-color: #8DB1AB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    }
+   
+}
+@media screen and (max-width: 768px) {
+    .pedido-details {
+        width: 100%;
+    }
+
+}
+.contenedor_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+.total_precio{
+    font-weight: bold;
+}
+
+
+.pedido-details h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pedido-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pedido-details li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.pedido-details li strong {
+    margin-right: 5px;
+}
+
+
+
+/* Estilos adicionales personalizables según tus preferencias */

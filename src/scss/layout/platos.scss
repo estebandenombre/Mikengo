@@ -1,0 +1,52 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.plato {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.plato-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.plato h2 {
+    font-size: 20px;
+   text-align: justify;
+}
+
+.descripcion-plato {
+    color: #666;
+    margin-top: 10px;
+}
+
+.precio-plato {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.boton-anadir {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-anadir:hover {
+    background-color: #45a049;
+}

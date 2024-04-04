@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/carta.scss","layout/carta.css"],"names":[],"mappings":"AAAA,eAEI,YAAA,CADA,UCEJ","file":"carta.css","sourcesContent":[".seccion_carta{\r\n    width: 100%;\r\n    height: 100vh;\r\n}",".seccion_carta {\n  width: 100%;\n  height: 100vh;\n}"]}

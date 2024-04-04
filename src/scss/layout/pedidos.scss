@@ -1,0 +1,275 @@
+/* Estilos generales */
+    /* Estilos para el cuerpo de la página */
+body {
+    //font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+    transition: width 0.3s ease; /* Transición para el ancho */
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    //transition: 0.3s;
+}
+
+
+
+
+/* Estilos para el contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Transición para el margen izquierdo */
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas de pedidos */
+.pedidos-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+    .pedidos-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sidebar{
+        width: 100%;
+        transition: width 0.3s ease; /* Transición para el ancho */
+        background-color: #333333e3;
+    }
+    .content{
+        margin-left: 320px;
+       width: 100%;
+       margin: 0 auto;
+       transition: margin-left 0.3s ease; /* Transición para el margen izquierdo */
+       
+    }
+    .pedido-card {
+        width: 90%;
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        //transition: 0.3s;
+    }
+    
+    
+}
+#ocultar_sidebar{
+    margin-top: 2rem;
+    background-color: #333;
+    cursor: pointer;
+}
+#mostrar_sidebar{
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+}
+
+.pedido-card {
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    //transition: 0.3s;
+}
+
+.pedido-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pedido-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pedido-card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+.contenedor_regresar{
+    width: 25px;
+    height: 25px;
+    
+    img{
+        width: 100%; /* Ancho del 100% del contenedor (se ajustará automáticamente) */
+        height: auto; /* Altura automática (se ajustará proporcionalmente) */
+        display: block; /* Eliminar el espacio adicional debajo de la imagen */
+    }
+}
+.contenedor_regresar:hover {
+    transform: translateX(-5px);
+   
+}
+.g{
+    position:absolute;
+    top: 2rem;
+    left: 2rem;
+}
+/* Estilos para la barra de búsqueda y el botón de filtrar */
+.filtro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.filtro label {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.filtro select,
+.filtro input[type="text"],
+.filtro button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filtro select {
+    flex: 1;
+}
+
+.filtro input[type="text"] {
+    flex: 3;
+}
+
+.filtro button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button {
+    display: inline-block;
+    padding: 3px 6px; /* Ajusta el relleno para hacer el botón más pequeño */
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos adicionales según tus necesidades */
+
+
+.sidebar ul li a.active {
+    background-color: #555; /* Color de fondo para el enlace activo */
+    color: #fff; /* Color de texto para el enlace activo */
+}
+/* Estilo predeterminado para ocultar el checkbox nativo */
+.custom-checkbox {
+    display: none;
+}
+
+/* Estilo del contenedor del checkbox */
+.custom-checkbox-label {
+    position: relative;
+    padding-left: 25px; /* Espacio a la izquierda del checkbox */
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    margin: 10px;
+}
+
+/* Estilo de la marca de verificación (el tick) */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Altura del checkbox */
+    width: 20px; /* Ancho del checkbox */
+    background-color: #fff; /* Color de fondo blanco inicial */
+    border: 1px solid #333; /* Borde oscuro */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+/* Cambia el color de fondo y el borde cuando el checkbox está marcado */
+.custom-checkbox:checked + .checkmark {
+    background-color: #333; /* Cambia a fondo oscuro cuando está marcado */
+    border: 1px solid #fff; /* Borde blanco cuando está marcado */
+}
+
+/* Estilo del tick dentro del checkbox */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Muestra el tick cuando el checkbox está marcado */
+.custom-checkbox:checked + .checkmark:after {
+    left: 6px; /* Posición horizontal del tick */
+    top: 3px; /* Posición vertical del tick */
+    width: 5px; /* Ancho del tick */
+    height: 10px; /* Altura del tick */
+    border: solid #fff; /* Borde blanco para el tick */
+    border-width: 0 2px 2px 0; /* Estilo de la línea del tick */
+    transform: rotate(45deg); /* Gira el tick 45 grados */
+    content: "";
+    display: block;
+}
+ #mostrar_sidebar{
+    margin-left: 4rem;
+    margin-top: 2rem;
+ }
+

@@ -1,0 +1,19 @@
+.seccion {
+    margin-top: calc($separacion / 2);
+    margin-bottom: calc($separacion / 2);
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+.ocultar{
+    display: none;
+}
+.maximizar{
+    margin-left: 0 !important;
+}
+.minimizar{
+    display: none;
+}
+.toda {
+    grid-column: 1/-1 !important;
+}

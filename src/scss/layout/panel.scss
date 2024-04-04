@@ -1,0 +1,76 @@
+.panel{
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+           //@include grid(2, 2rem);
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 20px;
+            width: 80%;
+            margin: 6rem auto;
+        }
+
+        .tool-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            background-color: #333;
+        }
+
+        /* Estilos específicos para las herramientas */
+       /* Estilos específicos para las herramientas con colores personalizados */
+.user-management {
+    background-color: #0000005f; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+}
+
+.content-management {
+    background-color: #0000005f; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+}
+
+.order-management {
+    background-color: #0000005f; /* Fondo amarillo */
+    color: #fff; /* Texto blanco */
+}
+
+.reporting {
+    background-color: #0000005f; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+}
+
+
+        /* Estilos de encabezado */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Estilos responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+
+            .tool-card {
+                margin-bottom: 20px;
+            }
+        }
+    }        
+    
